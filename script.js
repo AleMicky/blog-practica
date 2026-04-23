@@ -41,7 +41,7 @@ if (form && message) {
 	});
 }
 
-const revealTargets = document.querySelectorAll('.hero-copy, .hero-panel, .card, .metric, .newsletter');
+const revealTargets = document.querySelectorAll('.hero-copy, .hero-panel, .card, .metric, .newsletter, .product-card');
 revealTargets.forEach((element, index) => {
 	element.classList.add('reveal');
 	element.style.animationDelay = `${index * 0.08}s`;
