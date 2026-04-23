@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ByteVista | Blog de Tecnologia</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header class="topbar">
+			<nav class="nav container" aria-label="Navegacion principal">
+				<a href="#" class="brand" aria-label="Inicio de ByteVista">
+					<span class="brand-mark">BV</span>
+					<span class="brand-text">ByteVista</span>
+				</a>
+
+				<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<ul class="menu" id="menu-list">
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#articulos">Articulos</a></li>
+					<li><a href="#tendencias">Tendencias</a></li>
+					<li><a href="#newsletter">Newsletter</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero" id="inicio">
+				<div class="container hero-grid">
+					<div class="hero-copy">
+						<p class="kicker">Novedades, codigo y futuro digital</p>
+						<h1>Blog de tecnologia para mentes curiosas</h1>
+						<p>
+							Analisis claros sobre inteligencia artificial, desarrollo web,
+							ciberseguridad y productos que estan cambiando la forma en que
+							trabajamos y creamos.
+						</p>
+						<a href="#articulos" class="cta">Explorar articulos</a>
+					</div>
+					<aside class="hero-panel" aria-label="Destacado del dia">
+						<h2>Radar Tech</h2>
+						<p class="panel-title">Top 3 tecnologias de la semana</p>
+						<ol>
+							<li>Agentes de IA para productividad de desarrollo</li>
+							<li>Nueva ola de frameworks full-stack ligeros</li>
+							<li>Edge computing en apps de tiempo real</li>
+						</ol>
+					</aside>
+				</div>
+			</section>
+
+			<section class="articles container" id="articulos">
+				<div class="section-head">
+					<h2>Ultimos articulos</h2>
+					<div class="chip-row" role="tablist" aria-label="Filtro de temas">
+						<button class="chip active" data-filter="all">Todos</button>
+						<button class="chip" data-filter="ia">IA</button>
+						<button class="chip" data-filter="web">Web</button>
+						<button class="chip" data-filter="seguridad">Seguridad</button>
+					</div>
+				</div>
+
+				<div class="cards" id="cards">
+					<article class="card" data-tag="ia">
+						<p class="tag">IA</p>
+						<h3>Como los copilotos estan cambiando el desarrollo de software</h3>
+						<p>
+							Una mirada practica a los flujos de trabajo asistidos por IA y sus
+							limites reales en equipos de producto.
+						</p>
+						<a href="#">Leer mas</a>
+					</article>
+
+					<article class="card" data-tag="web">
+						<p class="tag">Web</p>
+						<h3>CSS moderno en 2026: menos hacks, mas expresividad</h3>
+						<p>
+							Grid, container queries y nuevas APIs permiten interfaces robustas
+							con menos complejidad y mejor mantenimiento.
+						</p>
+						<a href="#">Leer mas</a>
+					</article>
+
+					<article class="card" data-tag="seguridad">
+						<p class="tag">Seguridad</p>
+						<h3>5 errores comunes que exponen datos en aplicaciones web</h3>
+						<p>
+							Revisamos malas practicas frecuentes y controles basicos para
+							proteger autenticacion, sesiones y datos sensibles.
+						</p>
+						<a href="#">Leer mas</a>
+					</article>
+				</div>
+			</section>
+
+			<section class="trend-band" id="tendencias">
+				<div class="container trend-grid">
+					<div>
+						<h2>Tendencia clave</h2>
+						<p>
+							La frontera entre desarrollo y operaciones se acorta con agentes
+							autonomos, pipelines inteligentes y observabilidad en tiempo real.
+						</p>
+					</div>
+					<div class="metric">
+						<p class="metric-value">+67%</p>
+						<p class="metric-label">adopcion de herramientas AI-first en startups</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="newsletter container" id="newsletter">
+				<h2>Recibe resumen tech cada viernes</h2>
+				<form class="newsletter-form" id="newsletter-form">
+					<input type="email" id="email" placeholder="tu@email.com" required />
+					<button type="submit">Suscribirme</button>
+				</form>
+				<p id="form-message" aria-live="polite"></p>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<p>2026 ByteVista. Ideas tecnologicas para construir mejor.</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
